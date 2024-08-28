@@ -65,7 +65,33 @@ case "${1}" in
     ;;
     "all")
         echo "Warning: Running with this argument will download every packages"
+        # TODO: Make it better
         for i in ${packages[@]}
+        do
+            installPackage "${i}"
+        done
+
+        for i in ${expirementalPackages[@]}
+        do
+            installPackage "${i}"
+        done
+
+        for i in ${javaPackages[@]}
+        do
+            installPackage "${i}"
+        done
+
+        for i in ${extendedJavaPackages[@]}
+        do
+            installPackage "${i}"
+        done
+
+        for i in ${otherKDEPackages[@]}
+        do
+            installPackage "${i}"
+        done
+
+        for i in ${rubyPackages[@]}
         do
             installPackage "${i}"
         done

@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "This script will download all packages from the list"
 echo ""
-packages=("linux-generic" "latte-dock" "neofetch" "gimp" "krita" "kdenlive" "blender" "filelight" "virt-manager")
+packages=("linux-generic" "latte-dock" "neofetch" "gimp" "krita" "kdenlive" "blender" "obs-studio" "filelight" "virt-manager")
 expirementalPackages=("nvidia-340" "nvidia-opencl-icd-340" "nvidia-settings")
 # This packages are optional
 javaPackages=("openjdk-8-jre" "openjdk-16-jre" "openjdk-17-jre" "openjdk-21-jre")
